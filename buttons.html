@@ -1,0 +1,69 @@
+<html>
+<head>
+<style>
+.skillpt{
+display:flex; justify-content:space-around; flex-wrap:wrap; width:100%;
+}
+
+.skdiv{background:white;padding:10px 15px; width:100%; box-shadow:0 0 2px 0.5px #1e90ff;}
+.skdiv:hover{box-shadow:0 0 2px 1px #1e90ff;}
+.skdiv{width:20%; height:300px; background:white; margin:10px;}
+.skpart1{display:flex; justify-content:center;}
+.skpart1 img{width:20px; height:20px; border-radius:50%; margin-right:10px; margin-top:0px;}
+
+.progress{background:#e5e4e2; width:80%; height:6px; border-radius:5px; margin-top:10px;}
+
+.pbar1{height:6px; border-radius:5px; width:100%; background-image:linear-gradient(to right,#e77471,#ff6347,red,#dd1040);}
+.skdiv:hover .pbar1{height:6px; border-radius:5px; width:100%; background-image:linear-gradient(to right,#e77471,#ff6347,red,#dd1040); animation:skillbar1 1s linear forwards;}
+@keyframes skillbar1{
+0%{width:0%;}
+100%{width:100%;}
+}
+
+.pbar2{height:6px; border-radius:5px; width:90%; background-image:linear-gradient(to right,#82caff,#50ebec,#368bc1,#2554c7);}
+.skdiv:hover .pbar2{height:6px; border-radius:5px; width:90%;  background-image:linear-gradient(to right,#82caff,#50ebec,#368bc1,#2554c7); animation:skillbar2 1s linear forwards;}
+@keyframes skillbar2{
+0%{width:0%;}
+100%{width:90%;}
+}
+
+.pbar3{height:6px; border-radius:5px; width:80%; background-image:linear-gradient(to right,#f4a460,#ffae42,#ee9a4d,#c19a6b);}
+.skdiv:hover .pbar3{height:6px; border-radius:5px; width:80%; background-image:linear-gradient(to right,#f4a460,#ffae42,#ee9a4d,#c19a6b); animation:skillbar3 1s linear forwards;}
+@keyframes skillbar3{
+0%{width:0%;}
+100%{width:80%;}
+}
+</style>
+</head>
+<body>
+<h3>gradient effect</h3>
+<a id="btn1" href="#">Button </a>
+<div class="skillpt">
+<div class="skdiv div1">
+<div class="skillcard">
+    <div class="skpart1">
+	<img src="C:\Users\Jasdev Singh\Desktop\logos\web deg logo.png">
+	<h3>Web Designing</h3>
+	</div>
+	<div class="skpart2">
+	  <h6>HTML</h6>
+	  <div class="progress"><span>100%</span>
+	    <div class="pbar1"></div>
+	  </div>
+	  <h6>CSS</h6>
+	  <div class="progress"><span>90%</span>
+	    <div class="pbar2"></div>
+	  </div>
+	  <h6>JS</h6>
+	  <div class="progress"><span>80%</span>
+	    <div class="pbar3"></div>
+	  </div>
+	   <h6>PHP</h6>
+	  <div class="progress"><span>70%</span>
+	    <div class="pbar10"></div>
+	  </div>
+	  
+	</div>
+</div>
+</body>
+</html>
